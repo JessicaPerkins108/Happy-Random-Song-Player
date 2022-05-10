@@ -25,7 +25,7 @@ const songs = [
 'Shake It Off - Taylor Swift',
 'Girls Just Want to Have Fun — Cyndi Lauper',
 ];
-
+let tracks = [ '5IVuqXILoxVWvWEPm82Jxr', '32OlwWuMpZ6b0aN2RZOeMS', '60nZcImufyMA1MKQY3dcCH', '1OZSVl0JJ1MBzibpuhmmXb', '6KgBpzTuTRPebChN0VTyzV','3MJov5mT64K42o1Rffhblq']
 
 /*
 let randomItem = array[Math.floor(Math.random()*array.length)];
@@ -45,6 +45,6 @@ p.innerText = randomItem;
 // let randomItem = songs[Math.floor(Math.random()*songs.length)];
 
 // randoBtn.addEventListener("click", randomItem);
-randoBtn.addEventListener("click", () => document.getElementById("title").innerText = songs[Math.floor(Math.random()*songs.length)]);
-
+// randoBtn.addEventListener("click", () => document.getElementById("title").innerText = songs[Math.floor(Math.random()*songs.length)]);
+randoBtn.addEventListener("click", () => document.querySelector('.spotify-embed').src = `https://open.spotify.com/embed/track/${tracks[Math.floor(Math.random()*tracks.length)]}?utm_source=generator&theme=0`);
 
