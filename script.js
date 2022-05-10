@@ -25,8 +25,8 @@ const songs = [
 'Shake It Off - Taylor Swift',
 'Girls Just Want to Have Fun — Cyndi Lauper',
 ];
-let tracks = [ '5IVuqXILoxVWvWEPm82Jxr', '32OlwWuMpZ6b0aN2RZOeMS', '60nZcImufyMA1MKQY3dcCH', '1OZSVl0JJ1MBzibpuhmmXb', '6KgBpzTuTRPebChN0VTyzV','3MJov5mT64K42o1Rffhblq']
-
+let tracks = [ '5IVuqXILoxVWvWEPm82Jxr', '32OlwWuMpZ6b0aN2RZOeMS', '60nZcImufyMA1MKQY3dcCH', '1OZSVl0JJ1MBzibpuhmmXb', '6KgBpzTuTRPebChN0VTyzV','3MJov5mT64K42o1Rffhblq', '0d5f6gzzW1Pgx9uJsLrSDP', '1q9l6c8bAzqWcvO3DM6FsR','3Y91fIpStxQrUaXuaTbGVv','10yY7i70r9wtllofw0GIpx','7ndGFo9nZ108KPgXtfYWCe','7ndGFo9nZ108KPgXtfYWCe','1Cwsd5xI8CajJz795oy4XF', '6QXAMI7XJf2n2dO4RUhOde',
+]
 /*
 let randomItem = array[Math.floor(Math.random()*array.length)];
 let el = document.querySelector("p");
