@@ -1,0 +1,5 @@
+cd bootcamp
+   cd prework-study-guide code .
+code .
+git checkout -b feature/starter-code
+git status

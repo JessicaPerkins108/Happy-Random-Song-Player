@@ -1,0 +1,4 @@
+ssh-keygen -t ed25519 -C “maggs93@hotmail.co.uk”
+eval $(ssh-agent -s)
+$ open ~/.ssh/config
+$ touch ~/.ssh/config

@@ -1,0 +1,38 @@
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/Users/Shared/Adobe/OOBE/com.adobe.accc.apps/Records/data ; exit;
+echo "# Happy-Random-Song-Player" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Jessicoder108/Happy-Random-Song-Player.git
+git push -u origin main
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+ssh-keygen -t ed25519 -C “maggs93@hotmail.co.uk"
+
+
+ssh-keygen -t ed25519 -C “maggs93@hotmail.co.uk”
+eval “$(ssh-agent -s)”
+sudo -s -H
+ssh-add
+exec ssh-agent bash
+ls -al ~/.ssh
+ssh-keygen -t ed25519 -C “maggs93@hotmail.co.uk"
+
+
+ssh-keygen -t ed25519 -C “maggs93@hotmail.co.uk"
+$ ssh-keygen -t ed25519 -C "maggs93@hotmail.co.uk"
+exec ssh-agent zsh
+ls -al ~/.ssh
+ssh-keygen -t ed25519 -C “your_email@example.com”
+ssh-keygen -t ed25519 -C “maggs93@hotmail.co.uk”
+ls -al ~/.ssh
+eval “$(ssh-agent -s)”
+ssh -T git@github.com
+rm -rf ~/.ssh/*
+rm -rf ~/.ssh/*
+rm -rf ~/.ssh/
+ssh-add -D
+ls -al ~/.ssh

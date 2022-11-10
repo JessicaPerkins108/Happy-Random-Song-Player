@@ -1,0 +1,3 @@
+ls -al ~/.ssh
+rm ~/.ssh/file.pub
+rw ~/.ssh/file.pub

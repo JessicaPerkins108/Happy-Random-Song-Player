@@ -1,0 +1,68 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.formatHsla = exports.formatHsl = void 0;
+function formatHsl(clr) {
+    // remove all whitepsace
+    const hsl = clr.replace(/\s/g, "");
+    // check if color input uses commas or not to separate values
+    const sep = hsl.indexOf(",") > -1 ? "," : " ";
+    // array of hsl values
+    const hslArr = hsl.substr(4).split(")")[0].split(sep);
+    // isolate values
+    let h = hslArr[0];
+    let s = parseInt(hslArr[1].substr(0, hslArr[1].length - 1));
+    let l = parseInt(hslArr[2].substr(0, hslArr[2].length - 1));
+    // strip label and convert to degrees (if necessary)
+    if (h.indexOf("deg") > -1) {
+        h = parseFloat(h);
+    }
+    else if (h.indexOf("rad") > -1) {
+        h = Math.round(parseFloat(h) * (180 / Math.PI));
+    }
+    else if (h.indexOf("turn") > -1) {
+        h = Math.round(parseFloat(h) * 360);
+    }
+    if (h >= 360) {
+        h %= 360;
+    }
+    // if values are under 0 or over 100, return 0 or 100
+    s <= 0 ? 0 : s >= 100 ? 100 : s;
+    l <= 0 ? 0 : l >= 100 ? 100 : l;
+    return [parseInt(h), s, l];
+}
+exports.formatHsl = formatHsl;
+function formatHsla(clr) {
+    // remove all whitepsace
+    const hsla = clr.replace(/\s/g, "");
+    // check if color input uses commas or not to separate values
+    let sep = hsla.indexOf(",") > -1 ? "," : " ";
+    // array of hsla values
+    const hslaArr = hsla.substr(5).split(")")[0].split(sep);
+    // strip the slash between colors and opacity, supported since CSS4
+    if (hsla.indexOf("/") > -1) {
+        hsla.splice(3, 1);
+    }
+    let h = hslaArr[0];
+    let s = parseInt(hslaArr[1].substr(0, hslaArr[1].length - 1));
+    let l = parseInt(hslaArr[2].substr(0, hslaArr[2].length - 1));
+    let a = parseFloat(hslaArr[3]) >= 1 ? 1 : parseFloat(hslaArr[3]);
+    // strip label and convert to degrees (if necessary)
+    if (h.indexOf("deg") > -1) {
+        h = parseFloat(h);
+    }
+    else if (h.indexOf("rad") > -1) {
+        h = Math.round(parseFloat(h) * (180 / Math.PI));
+    }
+    else if (h.indexOf("turn") > -1) {
+        h = Math.round(parseFloat(h) * 360);
+    }
+    if (h >= 360) {
+        h %= 360;
+    }
+    // if values are under 0 or over 100, return 0 or 100
+    s <= 0 ? 0 : s >= 100 ? 100 : s;
+    l <= 0 ? 0 : l >= 100 ? 100 : l;
+    return [parseInt(h), s, l, a];
+}
+exports.formatHsla = formatHsla;
+//# sourceMappingURL=formatHsls.js.map

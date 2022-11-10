@@ -1,0 +1,11 @@
+ssh-add -D
+ls -al ~/.ssh
+ssh-add -D
+ls -al ~/.ssh
+ssh-add -l
+ssh-add -l
+ssh-add -D
+/.ssh/config
+cd ~/.ssh
+open .
+ls -al ~/.ssh

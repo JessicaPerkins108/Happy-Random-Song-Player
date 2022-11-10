@@ -1,0 +1,106 @@
+{
+	"name": "vscolors",
+	"displayName": "VSColors",
+	"description": "Color Format Converter for VSCode. Supports HEX(A), RGB(A) and HSL(A) formats.",
+	"version": "0.0.6",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"publisher": "kevscript",
+	"author": {
+		"name": "Kevin Ostafinski"
+	},
+	"homepage": "https://github.com/kevscript/vscolors",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kevscript/vscolors"
+	},
+	"icon": "icon.png",
+	"keywords": [
+		"vscolors",
+		"color converter",
+		"convert colors",
+		"hex to rgb",
+		"rgb to hex",
+		"hex converter",
+		"rgb converter",
+		"hsl converter",
+		"color parser",
+		"color format",
+		"color type"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:vscolors.color2Hex",
+		"onCommand:vscolors.color2Rgb",
+		"onCommand:vscolors.color2Hsl"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vscolors.color2Hex",
+				"title": "Color to HEX"
+			},
+			{
+				"command": "vscolors.color2Rgb",
+				"title": "Color to RGB"
+			},
+			{
+				"command": "vscolors.color2Hsl",
+				"title": "Color to HSL"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"command": "vscolors.color2Hex",
+					"group": "1_modification"
+				},
+				{
+					"when": "editorHasSelection",
+					"command": "vscolors.color2Rgb",
+					"group": "1_modification"
+				},
+				{
+					"when": "editorHasSelection",
+					"command": "vscolors.color2Hsl",
+					"group": "1_modification"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.2.14",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.52.0",
+		"@typescript-eslint/eslint-plugin": "^4.9.0",
+		"@typescript-eslint/parser": "^4.9.0",
+		"chai": "*",
+		"eslint": "^7.15.0",
+		"glob": "^7.1.6",
+		"mocha": "*",
+		"typescript": "^4.1.2",
+		"vscode-test": "^1.4.1"
+	},
+	"__metadata": {
+		"id": "625354e2-a9ba-4f5a-819c-f4ac225461fb",
+		"publisherId": "500c0734-a24b-475d-ac3e-2a5fcf1231b2",
+		"publisherDisplayName": "kevscript",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1651591868906
+	}
+}

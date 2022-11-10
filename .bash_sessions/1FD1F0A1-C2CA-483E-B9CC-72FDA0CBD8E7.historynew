@@ -1,0 +1,1 @@
+$ ssh-keygen -t ed25519-sk -C "maggs93@hotmail.co.uk"

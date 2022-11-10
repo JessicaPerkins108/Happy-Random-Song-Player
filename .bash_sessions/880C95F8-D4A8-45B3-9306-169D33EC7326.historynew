@@ -1,0 +1,6 @@
+ls -al ~/.ssh
+ssh-keygen -t ed25519 -C maggs93@hotmail.co.uk
+eval “$(ssh-agent -s)”
+eval $(ssh-agent -s)
+sudo -s -H SHA256:2dQmBizt0hiKYgI8UUDVQDHwBbPAm4jYp/Dv+RR03gM maggs93@hotmail.co.uk
+exec ssh-agent bash SHA256:2dQmBizt0hiKYgI8UUDVQDHwBbPAm4jYp/Dv+RR03gM maggs93@hotmail.co.uk

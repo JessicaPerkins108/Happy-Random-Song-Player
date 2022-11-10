@@ -1,0 +1,1 @@
+$ ssh-keygen -t ecdsa-sk -C "maggs93@hotmail.co.uk"

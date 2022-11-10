@@ -1,0 +1,10 @@
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/Users/Shared/Adobe/OOBE/com.adobe.accc.apps/Records/data ; exit;
+echo "# Happy-Random-Song-Player" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Jessicoder108/Happy-Random-Song-Player.git
+git push -u origin main
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
